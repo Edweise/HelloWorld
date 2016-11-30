@@ -18,6 +18,15 @@ arr.map(pow);//[1,4,9,16,25]
 var arr=[1,2,3,4,5];
 arr.map(String);//['1','2','3','4','5']
 
+//用map把字符串转换成整数
+'use strict'
+var arr=['1','2','3'];
+var r;
+function returnInt(x){
+   return parseInt(x,10);
+};
+r = arr.map(returnInt);
+
 //reduce()方法
 //对array累加求和
 var arr=[1,3,5,7,9];
