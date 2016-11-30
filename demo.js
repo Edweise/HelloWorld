@@ -83,3 +83,7 @@ arr.sort(function (s1, s2) {
     return 0;
 }); // ['apple', 'Google', 'Microsoft']
 
+//创建一个匿名函数并立刻执行的语法
+(function (x) {
+    return x * x;
+})(3);
