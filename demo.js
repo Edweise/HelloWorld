@@ -49,3 +49,21 @@ var r = arr.filter(function (s) {
 });
 arr; // ['A', 'B', 'C']
 
+//用filter筛选出素数
+function get_primes(arr){
+       var p = arr.filter(function(element,index,self){
+        if (element<3 && element!=1){
+            return true;
+        }else if (element === 1){
+            return false;
+        }else{
+            for(var i = 2; i<element; i++){
+              if (element%i===0){
+                return false;
+              };
+            };
+            return true;
+        };
+    });
+    return p;
+}
